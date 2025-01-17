@@ -1,0 +1,95 @@
+.bold{
+  font-weight: 600;
+}
+
+.italico{
+  font-style: italic;
+}
+
+.link{
+  color: var(--azul);
+  font-weight: 600;
+}
+
+.mg-bottom{
+  margin-bottom: 2rem;
+}
+
+.pd-top{
+  padding-top: 2rem;
+}
+
+.bg-grey{
+  background-color: var(--cinza);
+  border-radius: 2px;
+  padding: 0 .25rem; 
+}
+
+.nota-vermelha{
+  background-color: var(--vinho);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border-left: 3px solid var(--vermelho);
+  border-right: 3px solid var(--vermelho);
+}
+
+.nota-importante{
+  background-color: var(--vinho);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border-left: 3px solid var(--amarelo);
+  border-right: 3px solid var(--amarelo);
+}
+
+.nota-azul{
+  background-color: var(--azul-fosco);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  border-left: 3px solid var(--azul);
+  border-right: 3px solid var(--azul);
+}
+
+.nota-amarela{
+  background-color: var(--amarelo-fosco);
+  padding: 2rem;
+  border-radius: 1rem;
+  border-left: 3px solid var(--amarelo);
+  border-right: 3px solid var(--amarelo);
+}
+
+.nota-cinza{
+  padding: 2rem;
+  border-radius: 1rem;
+  border-left: 3px solid var(--cinza);
+  border-right: 3px solid var(--cinza);
+}
+
+.descricao-H2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 3rem 0;
+}
+
+#status-code-description{
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+#expect100{
+  background-color: var(--preto);
+  padding-right: .5rem;
+}
+
+#pf-201{
+  padding-top: 2rem;
+}
+
+#metodos-ul{
+  padding-bottom: 2rem;
+}
+
+
+

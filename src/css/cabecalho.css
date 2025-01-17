@@ -1,0 +1,23 @@
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0;
+  width: 90%;
+}
+
+.navBar{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navBar svg{
+  cursor: pointer;
+}
+
+#http-titulo {
+  color: var(--vermelho);
+  font-size: 3rem;
+  font-weight: 600;
+}

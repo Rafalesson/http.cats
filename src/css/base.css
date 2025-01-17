@@ -1,0 +1,26 @@
+:root {   
+  --verde: #32CD32;   
+  --cinza: #444444;    
+  --amarelo: #FFD700;
+  --amarelo-fosco: #614412;  
+  --vermelho: #D0383E;
+  --vinho: #57292B;    
+  --branco-bg: #F5F5F5; 
+  --preto: #222222;  
+  --azul: #6495ed;
+  --azul-fosco: #182631;    
+}
+
+html{
+  font-size: 62.5%;
+  color: var(--preto);
+}
+
+body{
+  background-color: var(--preto);
+  color: var(--branco-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", serif;
+}
