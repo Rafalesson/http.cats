@@ -1,6 +1,6 @@
 /* Container principal da página inicial */
 #main-conteudo-index {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -153,4 +153,38 @@
 .scroll-to-top-btn:hover {
   background-color: var(--branco-bg);
   color: var(--preto);
+}
+
+
+/* Para telas até 1200px de largura (por exemplo, “tablet grande”) */
+@media (max-width: 1200px) {
+  .card {
+    width: calc((100% / 3) - 2rem);
+  }
+
+  .pesquisar-status-code{
+    width: calc(66% - 2rem);
+  }
+}
+
+/* Para telas até 768px de largura (por exemplo, “tablet” ou “landscape phone”) */
+@media (max-width: 768px) {
+  .card {
+    width: calc((100% / 2) - 2rem);
+  }
+
+  .pesquisar-status-code{
+    width: 100%;
+  }
+
+  #cards-content {
+    justify-content: space-between;
+  }
+}
+
+/* Para telas até 480px de largura (celulares pequenos) */
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 2rem);
+  }
 }
