@@ -239,7 +239,7 @@ export const httpCatData = [
     title: "Not Found",
     imgUrl: "../images/404.jpeg",
     source: `https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/404`,
-    description: `<p>A resposta de erro <i class='bg-grey'>404 Not Found</i> indica que o servidor não conseguiu encontrar o recurso solicitado. Normalmente, links que levam para uma página 404 estão quebrados ou desativados.</p>`,
+    description: `<p>A resposta de erro <i class='bg-grey'>404 Not Found</i> ocorre quando o servidor foi contatado corretamente, porém não consegue encontrar o recurso (página, arquivo, etc.) solicitado. Normalmente isso acontece quando a URL está incorreta, o conteúdo foi removido ou movido de lugar sem o devido redirecionamento.</p>`,
   },
   {
     status: 405,
