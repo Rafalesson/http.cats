@@ -1,18 +1,22 @@
+/* Container principal da página inicial */
 #main-conteudo-index {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
 
+/* Caixa de pesquisa */
 .pesquisar-status-code {
-  width: 45%;
+  width: calc(50% - 2rem);
   display: flex;
-  gap: 1.5rem;
   background-color: var(--cinza);
   height: 6rem;
   border-radius: 1rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Input de status code */
 #numero-status-code {
   width: 85%;
   background-color: var(--cinza);
@@ -24,53 +28,75 @@
   padding-left: 1rem;
 }
 
-.pesquisar-btn{
+/* Botão de pesquisa */
+.pesquisar-btn {
   cursor: pointer;
 }
 
+/* Ícone de lupa dentro do botão */
 .pesquisar-btn img {
   height: 5rem;
   padding: 1rem;
 }
 
-#cards-content{
-  margin-top: 3rem;
+/* Container que abriga todos os cards */
+#cards-content {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-
-.card{
+/* Estilo base do card */
+.card {
   display: flex;
   flex-direction: column;
   width: calc((100% / 4) - 2rem);
   border-radius: 1rem;
   cursor: pointer;
-  opacity: .75;
-}
-
-.card:hover{
-  opacity: 1;
-  transform: scale(.98); 
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+  opacity: 0.75;
 }
 
-.bg-card{
-  background-repeat: no-repeat; 
-  background-position: center;  
-  background-size: cover;  
+/* Efeito hover no card */
+.card:hover {
+  opacity: 1;
+  transform: scale(0.98);
+}
+
+.card.bg-blue:hover {
+  background-color: var(--azul); 
+}
+
+.card.bg-green:hover {
+  background-color: var(--verde);
+}
+
+.card.bg-yellow:hover {
+  background-color: var(--amarelo);
+}
+
+.card.bg-red:hover {
+  background-color: var(--vermelho);
+}
+
+/* Área de imagem do card */
+.bg-card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 30vh;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.descricao-card{
+/* Área de texto do card */
+.descricao-card {
   height: 15vh;
   width: 100%;
-  background-color: var(--vermelho);
-  border-radius: 0 0 .5rem .5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
   display: flex;
   flex-direction: column;
   font-size: 3rem;
@@ -80,6 +106,51 @@
   padding-left: 1rem;
 }
 
-.descricao-status-code{
+/* Texto de descrição (título do status) */
+.descricao-status-code {
   font-size: 1.6rem;
+}
+
+/* Classes de cor (aplicadas via JavaScript no card) */
+.bg-blue {
+  background-color: var(--azul-fosco);
+}
+.bg-green {
+  background-color: var(--verde-fosco);
+}
+.bg-yellow {
+  background-color: var(--amarelo-fosco);
+}
+.bg-red {
+  background-color: var(--vinho);
+}
+
+/* Sentinela para scroll infinito (IntersectionObserver) */
+#sentinel {
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+}
+
+/* Botão "voltar ao topo" */
+.scroll-to-top-btn {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  width: 6rem;
+  height: 6rem;
+  font-size: 5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--cinza);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: var(--branco-bg);
+  color: var(--preto);
 }

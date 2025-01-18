@@ -1,24 +1,24 @@
-.back-btn{
-  display: flex;
-  font-size: 1.8rem;
-  letter-spacing: .3rem;
-  margin-top: 1rem;
-  text-decoration: underline 1px;
-}
-
-.back-btn:hover{
-  text-decoration: underline 1px var(--vermelho);
-}
-
-.back-btn a strong{
-  letter-spacing: 0;
-}
-
 #main-conteudo-status{
   width: 90%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.btn-seta{
+  font-size: 4rem;
+  height: 6rem;
+  width: 6rem;
+  cursor: pointer;
+  position: relative;
+  top: -15rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.btn-seta:hover{
+  background-color: var(--branco-bg);
+  color: var(--preto);
 }
 
 .conteudo-status{
@@ -30,12 +30,15 @@
 #status-code-image{
   width: 100%;
   height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 #status-code-title{
   font-size: 3rem;
-  text-align: center;
   font-weight: 600;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 .fonte-H3{
@@ -56,3 +59,10 @@
   color: var(--vermelho);
   text-decoration: underline 1px var(--branco-bg);
 }
+
+
+/* // Percorre o array e insere cada card no container
+httpDataCard.forEach(item => {
+  const novoCard = criarCard(item);
+  cardsContainer.appendChild(novoCard);
+}); */

@@ -1,13 +1,14 @@
 :root {   
-  --verde: #32CD32;   
+  --verde-fosco: rgba(43, 165, 69, .25);   
+  --verde: rgb(43, 165, 69);   
   --cinza: #444444;    
-  --amarelo: #FFD700;
+  --amarelo: #EAB308;
   --amarelo-fosco: #614412;  
   --vermelho: #D0383E;
   --vinho: #57292B;    
   --branco-bg: #F5F5F5; 
   --preto: #222222;  
-  --azul: #6495ed;
+  --azul: #2F6DAE;
   --azul-fosco: #182631;    
 }
 

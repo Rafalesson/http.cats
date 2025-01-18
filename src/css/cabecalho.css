@@ -3,11 +3,17 @@
   flex-direction: column;
   gap: 2rem;
   padding: 3rem 0;
-  width: 90%;
+  margin-bottom: 5rem;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+
 }
 
 .navBar{
   display: flex;
+  width: 80%;
   align-items: center;
   gap: 1rem;
 }
@@ -20,4 +26,21 @@
   color: var(--vermelho);
   font-size: 3rem;
   font-weight: 600;
+}
+
+.back-btn{
+  display: flex;
+  font-size: 1.8rem;
+  letter-spacing: .3rem;
+  margin-top: 1rem;
+  text-decoration: underline 1px;
+  width: 80%;
+}
+
+.back-btn:hover{
+  text-decoration: underline 1px var(--vermelho);
+}
+
+.back-btn a strong{
+  letter-spacing: 0;
 }
