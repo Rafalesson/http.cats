@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
      const nearBottom =
      window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
 
-   // Se está perto do fim, adiciona a classe que move o botão à direita
+   // Se está perto do fim, adiciona a classe que move o botão um pouco para cima
    if (nearBottom) {
-     scrollBtn.classList.add("move-right");
+     scrollBtn.classList.add("sobe");
    } else {
-     // Caso contrário, remove a classe para voltar ao centro
-     scrollBtn.classList.remove("move-right");
+     // Caso contrário, remove a classe
+     scrollBtn.classList.remove("sobe");
    }
   }
 
