@@ -46,7 +46,7 @@
 }
 
 #autora-fotos, #inspired{
-  padding-left: .5rem;
+  gap: .5rem;
 }
 
 /* Animação que parte da posição X=100% até X=-100% */
