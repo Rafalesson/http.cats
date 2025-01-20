@@ -138,20 +138,20 @@
 /* Botão "voltar ao topo" */
 .scroll-to-top-btn {
   position: fixed;
-  right: 4rem;
-  bottom: 4rem;
+  left: 50%;
+  bottom: 2rem;
   width: 6rem;
   height: 6rem;
   font-size: 5rem;
   border: none;
   border-radius: 50%;
-  background-color: var(--cinza);
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   display: none;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  opacity: 1;
+  opacity: .75;
 }
 
 .scroll-to-top-btn:hover {
@@ -183,8 +183,9 @@
   }
 
   .scroll-to-top-btn {
-    right: 2rem;
-    bottom: 3rem;
+    bottom: 1.5rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 
@@ -200,5 +201,11 @@
 
   .pesquisar-status-code{
     width: 100%;
+  }
+
+  .scroll-to-top-btn {
+    bottom: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
