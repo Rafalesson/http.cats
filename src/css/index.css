@@ -7,7 +7,7 @@
 
 /* Caixa de pesquisa */
 .pesquisar-status-code {
-  width: calc(50% - 2rem);
+  width: calc(50% - 1rem);
   display: flex;
   background-color: var(--cinza);
   height: 6rem;
@@ -46,6 +46,8 @@
   width: 100%;
   gap: 1.5rem;
   margin-bottom: 3rem;
+  justify-content: space-between;
+
 }
 
 /* Estilo base do card */
@@ -58,6 +60,7 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
   opacity: 0.75;
+  margin-bottom: 1rem;
 }
 
 /* Efeito hover no card */
@@ -148,11 +151,13 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  opacity: 1;
 }
 
 .scroll-to-top-btn:hover {
   background-color: var(--branco-bg);
   color: var(--preto);
+  opacity: 1;
 }
 
 
@@ -163,28 +168,37 @@
   }
 
   .pesquisar-status-code{
-    width: calc(66% - 2rem);
+    width: 66%;
   }
 }
 
 /* Para telas até 768px de largura (por exemplo, “tablet” ou “landscape phone”) */
 @media (max-width: 768px) {
   .card {
-    width: calc((100% / 2) - 2rem);
+    width: calc((100% / 2) - 1.5rem);
   }
 
   .pesquisar-status-code{
     width: 100%;
   }
 
-  #cards-content {
-    justify-content: space-between;
+  .scroll-to-top-btn {
+    right: 2rem;
+    bottom: 3rem;
   }
 }
 
 /* Para telas até 480px de largura (celulares pequenos) */
 @media (max-width: 480px) {
   .card {
-    width: calc(100% - 2rem);
+    width: 100%;
+  }
+
+  #cards-content{
+    justify-content: center;
+  }
+
+  .pesquisar-status-code{
+    width: 100%;
   }
 }
