@@ -18,11 +18,13 @@
   gap: 1rem;
 }
 
-#httpcat_logo{
+.httpcat_logo{
   cursor: pointer;
+  width: 8rem;
+  height: 5rem;
 }
 
-#httpcat_logo:hover path{
+.httpcat_logo:hover path{
   fill: var(--vermelho);
 
 }
@@ -48,4 +50,39 @@
 
 .back-btn a strong{
   letter-spacing: 0;
+}
+
+
+/* Para telas até 768px de largura (por exemplo, “tablet” ou “landscape phone”) */
+@media (max-width: 768px) {
+  .cabecalho{
+    margin-bottom: 3rem;
+  }
+
+  #http-titulo {
+    font-size: 2.5rem;
+  }
+
+  .back-btn{
+    font-size: 1.6rem;
+  }
+}
+
+/* Para telas até 480px de largura (celulares pequenos) */
+@media (max-width: 480px) {
+  #http-titulo {
+    font-size: 2rem;
+  }
+
+  .httpcat_logo{
+    width: 6rem;
+  }
+
+  .cabecalho{
+    margin-bottom: 2.5rem;
+  }
+
+  .back-btn{
+    font-size: 1.4rem;
+  }
 }

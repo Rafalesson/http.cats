@@ -14,11 +14,13 @@
   top: -15rem;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
+  opacity: .75;
 }
 
 .btn-seta:hover{
   background-color: var(--branco-bg);
   color: var(--preto);
+  opacity: 1;
 }
 
 .conteudo-status{
@@ -61,8 +63,62 @@
 }
 
 
-/* // Percorre o array e insere cada card no container
-httpDataCard.forEach(item => {
-  const novoCard = criarCard(item);
-  cardsContainer.appendChild(novoCard);
-}); */
+
+
+/* Para telas até 1200px de largura (por exemplo, “tablet grande”) */
+@media (max-width: 1200px) {
+  .conteudo-status {
+    width: 80%;
+}
+}
+
+/* Para telas até 768px de largura (por exemplo, “tablet” ou “landscape phone”) */
+@media (max-width: 768px) {
+  .conteudo-status {
+    width: 90%;
+}
+
+.btn-seta{
+  font-size: 3rem;
+  height: 5rem;
+  width: 5rem;
+  top: -20rem;
+}
+
+#btn-prev{
+  left: -1rem;
+}
+
+#btn-next{
+right: -1rem;
+}
+
+}
+
+/* Para telas até 480px de largura (celulares pequenos) */
+@media (max-width: 480px) {
+  #main-conteudo-status{
+    width: 100%;
+  }
+
+  #status-code-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn-seta{
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+#btn-prev{
+  left: 0;
+}
+
+#btn-next{
+right: 0;
+}
+
+
+}
