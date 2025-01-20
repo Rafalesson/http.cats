@@ -12,11 +12,6 @@
   font-size: 1.5rem;
 }
 
-.center-me {
-  text-align: center;
-  margin-bottom: 2rem; 
-}
-
 /* Container que esconde a “largura” e permite o movimento interno */
 #rodape-moves {
   position: relative;
@@ -42,11 +37,17 @@
 /* Padrão para os parágrafos que estão se movendo */
 #rodape-moves .footer-text {
   display: flex;  
-  margin-right: 2rem;     
+  margin-right: 3rem;
+  margin-top: 2rem;     
 }
 
 #autora-fotos, #inspired{
   gap: .5rem;
+}
+
+#autor{
+  padding-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 /* Animação que parte da posição X=100% até X=-100% */
