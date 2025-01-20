@@ -51,7 +51,7 @@
 }
 
 #status-code-source{
-  text-decoration: underline 1px var(--vermelho);
+  text-decoration: underline 1px;
   padding-bottom: 3rem;
   font-size: 1.4rem;
   cursor: pointer;
@@ -59,7 +59,7 @@
 
 #status-code-source:hover{
   color: var(--vermelho);
-  text-decoration: underline 1px var(--branco-bg);
+  text-decoration: underline 1px var(--vermelho);
 }
 
 

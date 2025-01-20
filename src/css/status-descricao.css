@@ -1,4 +1,4 @@
-.bold{
+/* .bold{
   font-weight: 600;
 }
 
@@ -23,7 +23,7 @@
   background-color: var(--cinza);
   border-radius: 2px;
   padding: 0 .25rem; 
-}
+} */
 
 .nota-vermelha{
   background-color: var(--vinho);

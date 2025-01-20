@@ -25,3 +25,49 @@ body{
   align-items: center;
   font-family: "Montserrat", serif;
 }
+
+.bold{
+  font-weight: 600;
+}
+
+.italico{
+  font-style: italic;
+}
+
+.link{
+  color: var(--azul);
+  font-weight: 600;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+.mg-bottom{
+  margin-bottom: 2rem;
+}
+
+.pd-top{
+  padding-top: 2rem;
+}
+
+
+/* Classes de cor (aplicadas via JavaScript no card) */
+.bg-grey{
+  background-color: var(--cinza);
+  border-radius: 2px;
+  padding: 0 .25rem; 
+}
+
+.bg-blue {
+  background-color: var(--azul-fosco);
+}
+.bg-green {
+  background-color: var(--verde-fosco);
+}
+.bg-yellow {
+  background-color: var(--amarelo-fosco);
+}
+.bg-red {
+  background-color: var(--vinho);
+}

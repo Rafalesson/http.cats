@@ -1,0 +1,72 @@
+#rodape{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.footer-text{
+  font-size: 1.5rem;
+}
+
+.center-me {
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
+/* Container que esconde a “largura” e permite o movimento interno */
+#rodape-moves {
+  position: relative;
+  width: 90vw;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+/* A div que realmente se move, animando da direita para a esquerda */
+.moving-content {
+  white-space: nowrap;             
+  width: 100%;    
+  display: flex;  
+  justify-content: space-between;     
+  animation: marquee 20s linear infinite; 
+}
+
+.moving-content:hover {
+  animation-play-state: paused; /* pausa a animação enquanto o mouse estiver em cima */
+}
+
+/* Padrão para os parágrafos que estão se movendo */
+#rodape-moves .footer-text {
+  display: flex;  
+  margin-right: 2rem;     
+}
+
+#autora-fotos, #inspired{
+  padding-left: .5rem;
+}
+
+/* Animação que parte da posição X=100% até X=-100% */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);   
+  }
+  100% {
+    transform: translateX(-100%);  
+  }
+}
+
+@media (max-width: 768px) {
+  .moving-content {
+    animation: marquee 15s linear infinite;
+}
+}
+
+@media (max-width: 480px) {
+  .moving-content {
+    animation: marquee 10s linear infinite;
+}
+}

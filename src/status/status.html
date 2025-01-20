@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../css/cabecalho.css" />
   <link rel="stylesheet" href="../css/status.css" />
   <link rel="stylesheet" href="../css/status-descricao.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
 
   <!--Javascript-->
   <script type="module" src="../js/status.js" defer></script>
@@ -65,6 +66,52 @@
     <button type="button" id="btn-next" class="btn-seta">&#x27A1;</button>
   </main>
 
+  <footer id="rodape">
+    <!-- Seção sobre o autor/colaborador do projeto -->
+    <section aria-label="Informações sobre o autor">
+      <p class="footer-text center-me">
+        Desenvolvido por
+        <a href="https://linkedin.com/in/rafael-alesson" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="link" 
+           id="autor">
+          Rafael Alesson
+        </a>
+      </p>
+    </section>
+  
+    <!-- Seção sobre créditos e inspiração (movimento horizontal) -->
+    <section aria-label="Créditos e inspirações">
+      <div id="rodape-moves" role="marquee" aria-label="Rolagem contínua de informações">
+        <div class="moving-content">
+          <!-- Primeiro crédito: imagens originais -->
+          <p class="footer-text">
+            Imagens originais de 
+              <a href="https://x.com/girlie_mac" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="link" 
+               id="autora-fotos">
+              Tomomi Imura
+            </a>
+          </p>
+  
+          <!-- Segundo crédito: fonte de inspiração -->
+          <p class="footer-text">
+            Este projeto foi inspirado em 
+              <a href="https://http.cat" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="link" 
+               id="inspired">
+              http.cat
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
