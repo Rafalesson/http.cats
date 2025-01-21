@@ -629,7 +629,7 @@ export const httpCatData = [
     title: "Connection timed out",
     imgUrl: "../images/522.jpeg",
     source: `https://http.dev/522`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC (Request for Comments).</p>
     
     <p>O código HTTP <i class='bg-grey'>522 Connection timed out</i> é um erro de servidor não oficial específico da Cloudflare. Esse erro ocorre quando a Cloudflare não consegue se conectar ao servidor original devido a um tempo limite (timeout).</p>`,
   },{
