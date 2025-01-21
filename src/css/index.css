@@ -9,7 +9,7 @@
 .pesquisar-status-code {
   width: calc(50% - 1rem);
   display: flex;
-  background-color: var(--cinza);
+  background-color: var(--bg-color);
   height: 6rem;
   border-radius: 1rem;
   margin-bottom: 5rem;
@@ -19,11 +19,11 @@
 /* Input de status code */
 #numero-status-code {
   width: 85%;
-  background-color: var(--cinza);
+  background-color: var(--bg-color);
   border-radius: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--branco-bg);
+  color: var(--text-color);
   outline: none;
   padding-left: 1rem;
 }
@@ -58,14 +58,14 @@
   border-radius: 1rem;
   cursor: pointer;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
-  opacity: 0.75;
+  transition: background-color .5s ease, color 0.3s ease;
   margin-bottom: 1rem;
+  color: var(--text-color);
+  /* background-color: var(--card-bg-color); */
 }
 
 /* Efeito hover no card */
 .card:hover {
-  opacity: 1;
   transform: scale(0.98);
 }
 
@@ -112,6 +112,11 @@
 /* Texto de descrição (título do status) */
 .descricao-status-code {
   font-size: 1.6rem;
+  color: var(--branco-bg);
+}
+
+.numero-status-code{
+  color: var(--branco-bg);
 }
 
 /* Sentinela para scroll infinito (IntersectionObserver) */
@@ -150,7 +155,7 @@
 
 /* Classe para ir ao canto direito */
 .scroll-to-top-btn.sobe {
-  bottom: 10rem;
+  bottom: 12rem;
 }
 
 /* Para telas até 1200px de largura (por exemplo, “tablet grande”) */

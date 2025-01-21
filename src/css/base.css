@@ -1,5 +1,5 @@
 :root {   
-  --verde-fosco: rgba(43, 165, 69, .25);   
+  --verde-fosco: #24442B;   
   --verde: rgb(43, 165, 69);   
   --cinza: #444444;    
   --amarelo: #EAB308;
@@ -10,6 +10,10 @@
   --preto: #222222;  
   --azul: #2F6DAE;
   --azul-fosco: #182631;    
+
+  --bg-color: var(--preto);
+  --text-color: var(--branco-bg);
+  /* --card-bg-color: var(--cinza); */
 }
 
 html{
@@ -17,13 +21,18 @@ html{
   color: var(--preto);
 }
 
-body{
-  background-color: var(--preto);
-  color: var(--branco-bg);
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Montserrat", serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.httpcat_logo path {
+  fill: var(--text-color);
 }
 
 .bold{
@@ -51,12 +60,12 @@ body{
   padding-top: 2rem;
 }
 
-
 /* Classes de cor (aplicadas via JavaScript no card) */
 .bg-grey{
   background-color: var(--cinza);
   border-radius: 2px;
   padding: 0 .25rem; 
+  color: var(--branco-bg);
 }
 
 .bg-blue {
@@ -70,4 +79,56 @@ body{
 }
 .bg-red {
   background-color: var(--vinho);
+}
+
+.toggle-switch {
+  display: flex;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: 1px solid var(--cinza);
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#lua-dark, #sol-claro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+#lua-dark {
+  background-color: var(--preto);
+  color: var(--branco-bg);
+  opacity: 1; /* Lua em destaque inicialmente */
+}
+
+#sol-claro {
+  background-color: var(--branco-bg);
+  color: var(--preto);
+  opacity: 0.1; /* Sol opaco inicialmente */
+}
+
+/* Quando estiver no modo escuro */
+.toggle-switch.dark-mode #lua-dark {
+  opacity: 1; /* Lua em destaque */
+}
+
+.toggle-switch.dark-mode #sol-claro {
+  opacity: 0.1; /* Sol opaco */
+}
+
+/* Quando estiver no modo claro */
+.toggle-switch.light-mode #lua-dark {
+  opacity: 0.1; /* Lua opaca */
+}
+
+.toggle-switch.light-mode #sol-claro {
+  opacity: 1; /* Sol em destaque */
 }

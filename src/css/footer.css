@@ -1,73 +1,75 @@
-#rodape{
+#rodape {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 2rem;
+  padding: 1rem;
 }
 
-.footer-text{
-  font-size: 1.5rem;
+.footer-text {
+  font-size: 1.4rem;
+  white-space: nowrap; /* Garante que o texto não quebre */
 }
 
 /* Container que esconde a “largura” e permite o movimento interno */
 #rodape-moves {
-  position: relative;
-  width: 90vw;
+  width: 90vw; 
   overflow: hidden;
-  margin-bottom: 2rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* A div que realmente se move, animando da direita para a esquerda */
 .moving-content {
-  white-space: nowrap;             
-  width: 100%;    
-  display: flex;  
-  justify-content: space-between;     
-  animation: marquee 20s linear infinite; 
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  animation: marquee 15s linear infinite;
+  color: var(--text-color);
+  padding: 2rem 0;
 }
 
 .moving-content:hover {
-  animation-play-state: paused; /* pausa a animação enquanto o mouse estiver em cima */
+  animation-play-state: paused; 
 }
 
-/* Padrão para os parágrafos que estão se movendo */
-#rodape-moves .footer-text {
-  display: flex;  
-  margin-right: 3rem;
-  margin-top: 2rem;     
-}
-
-#autora-fotos, #inspired{
-  gap: .5rem;
-}
-
-#autor{
-  padding-bottom: 3rem;
-  padding-top: 1rem;
+#autor {
+  padding-bottom: 2rem;
 }
 
 /* Animação que parte da posição X=100% até X=-100% */
 @keyframes marquee {
   0% {
-    transform: translateX(100%);   
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%);  
+    transform: translateX(-100%);
   }
 }
 
+/* Para telas até 768px */
 @media (max-width: 768px) {
+  #rodape-moves {
+    padding: 0;
+  }
   .moving-content {
-    animation: marquee 15s linear infinite;
-}
+    animation: marquee 12s linear infinite;
+    gap: 15rem; 
+  }
+  .footer-text {
+    font-size: 1.3rem;
+  }
 }
 
+/* Para telas até 480px */
 @media (max-width: 480px) {
   .moving-content {
     animation: marquee 10s linear infinite;
-}
+  }
+  .footer-text {
+    font-size: 1.2rem;
+  }
 }
