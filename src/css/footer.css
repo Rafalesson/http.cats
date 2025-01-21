@@ -22,6 +22,14 @@
   justify-content: center;
 }
 
+#rodape-moves-status{
+  width: 70vw; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* A div que realmente se move, animando da direita para a esquerda */
 .moving-content {
   display: flex;
@@ -52,9 +60,6 @@
 
 /* Para telas até 768px */
 @media (max-width: 768px) {
-  #rodape-moves {
-    padding: 0;
-  }
   .moving-content {
     animation: marquee 12s linear infinite;
     gap: 15rem; 

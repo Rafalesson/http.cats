@@ -5,6 +5,7 @@
   margin-bottom: 2rem;
   border-left: 3px solid var(--vermelho);
   border-right: 3px solid var(--vermelho);
+  color: var(--branco-bg);
 }
 
 .nota-importante{
@@ -14,6 +15,7 @@
   margin-bottom: 2rem;
   border-left: 3px solid var(--amarelo);
   border-right: 3px solid var(--amarelo);
+  color: var(--branco-bg);
 }
 
 .nota-azul{
@@ -23,6 +25,7 @@
   border-radius: 1rem;
   border-left: 3px solid var(--azul);
   border-right: 3px solid var(--azul);
+  color: var(--branco-bg);
 }
 
 .nota-amarela{
@@ -31,6 +34,7 @@
   border-radius: 1rem;
   border-left: 3px solid var(--amarelo);
   border-right: 3px solid var(--amarelo);
+  color: var(--branco-bg);
 }
 
 .nota-cinza{
@@ -38,6 +42,7 @@
   border-radius: 1rem;
   border-left: 3px solid var(--cinza);
   border-right: 3px solid var(--cinza);
+  color: var(--text-color);
 }
 
 .descricao-H2 {
