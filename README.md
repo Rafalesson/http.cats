@@ -1,5 +1,5 @@
 # Entenda HTTP com Gatos
-Este projeto exibe, de forma descontraída, códigos de status HTTP associados a imagens de gatos. Oferece recursos como busca, carregamento dinâmico (lazy loading), animação no rodapé e um botão de “voltar ao topo” com comportamento personalizado.
+Este projeto exibe, de forma descontraída, códigos de status HTTP associados a imagens de gatos. Ele oferece recursos como busca, carregamento dinâmico (lazy loading), animação no rodapé, alternância de tema (Dark Mode/Light Mode) e um botão de “voltar ao topo” com comportamento personalizado.
 
 ## Funcionalidades Principais
 **1. Listagem de Status Codes (Cards):**
@@ -28,6 +28,15 @@ Este projeto exibe, de forma descontraída, códigos de status HTTP associados a
   - Layout adaptado para diferentes tamanhos de tela, usando media queries.
   - Cards se reorganizam em colunas para tablets e celulares.
 
+**7. Modo Claro/Escuro (Dark Mode/Light Mode):**
+  1. *Alternância de tema com um botão que exibe:*
+  - Lua 🌙 para o Dark Mode.
+  - Sol ☀️ para o Light Mode.
+  2. *A alternância do tema afeta:*
+  - Background da página.
+  - Cores do texto.
+  - Ícones e imagens (ex.: o ícone da lupa muda de acordo com o tema).
+  - O tema selecionado é salvo no Local Storage, garantindo a preferência do usuário mesmo após fechar o navegador.
 
 ## Tecnologias Utilizadas
 
