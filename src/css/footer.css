@@ -1,5 +1,5 @@
 #rodape {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,14 +16,6 @@
 /* Container que esconde a “largura” e permite o movimento interno */
 #rodape-moves {
   width: 90vw; 
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#rodape-moves-status{
-  width: 70vw; 
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -67,6 +59,10 @@
   .footer-text {
     font-size: 1.3rem;
   }
+
+  #rodape-moves-status{
+    width: 80vw; 
+  }
 }
 
 /* Para telas até 480px */
@@ -74,6 +70,7 @@
   .moving-content {
     animation: marquee 10s linear infinite;
   }
+  
   .footer-text {
     font-size: 1.2rem;
   }
