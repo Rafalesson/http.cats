@@ -460,7 +460,7 @@ export const httpCatData = [
     title: "SSL Certificate Error",
     imgUrl: "../images/495.jpeg",
     source: `https://http.dev/495`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>
     O código de status de resposta HTTP <i>495 SSL Certificate Error</i> é um erro de cliente não oficial específico do nginx e é retornado pelo servidor para indicar que houve um erro na verificação do certificado do cliente.</p>`,
@@ -470,7 +470,7 @@ export const httpCatData = [
     title: "SSL Certificate Required",
     imgUrl: "../images/496.jpeg",
     source: `https://http.dev/496`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>O código de status de resposta HTTP <i>496 SSL Certificate Required</i> é um erro de cliente não oficial específico do nginx e é retornado pelo servidor para indicar que o cliente não apresentou o certificado requerido.</p>`,
   },
@@ -479,7 +479,7 @@ export const httpCatData = [
     title: "HTTP Request Sent to HTTPS Port",
     imgUrl: "../images/497.jpeg",
     source: `https://http.dev/497`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>O status HTTP <i class='bg-grey'>497 HTTP Request Sent to HTTPS Port</i> é um erro de cliente não oficial específico do <i class='bold'>nginx</i> e é retornado pelo servidor para indicar que uma requisição HTTP regular foi enviada para a porta HTTPS.</p>`,
   },
@@ -488,7 +488,7 @@ export const httpCatData = [
     title: "Invalid Token",
     imgUrl: "../images/498.jpeg",
     source: `https://http.dev/498`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>
     O status HTTP <i class='bg-grey'>498 Invalid Token</i> é um erro de cliente não oficial específico do ArcGIS e indica que a requisição HTTP incluiu um token, mas ele não foi aceito.
@@ -499,7 +499,7 @@ export const httpCatData = [
     title: "Client Closed Request",
     imgUrl: "../images/499.jpeg",
     source: `https://http.dev/499`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
 
     <p>O código HTTP <i class='bg-grey'>499 Token Required</i> é um erro de cliente não oficial específico do <i class='bold'>nginx</i>.<p>
     `,
@@ -593,7 +593,7 @@ export const httpCatData = [
     title: "Bandwidth Limit Exceeded",
     imgUrl: "../images/509.jpeg",
     source: `https://http.dev/509`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>
     O código HTTP <i class='bg-grey'>509 Bandwidth Limit Exceeded</i> é um erro de servidor não oficial específico do Apache Web Server e do cPanel. Esse erro indica que o cliente de hospedagem web excedeu a cota de largura de banda alocada no servidor.
@@ -620,7 +620,7 @@ export const httpCatData = [
     title: "Web server is down",
     imgUrl: "../images/521.jpeg",
     source: `https://http.dev/521`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>O código HTTP <i class='bg-grey'>521 Web server is down</i> é um erro de servidor não oficial específico da Cloudflare. Esse erro ocorre quando o cliente consegue se conectar à Cloudflare, mas a Cloudflare não consegue se conectar ao servidor original do site. Em outras palavras, significa que o servidor principal está fora do ar ou não está respondendo.</p>`,
   },
@@ -629,7 +629,7 @@ export const httpCatData = [
     title: "Connection timed out",
     imgUrl: "../images/522.jpeg",
     source: `https://http.dev/522`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>O código HTTP <i class='bg-grey'>522 Connection timed out</i> é um erro de servidor não oficial específico da Cloudflare. Esse erro ocorre quando a Cloudflare não consegue se conectar ao servidor original devido a um tempo limite (timeout).</p>`,
   },{
@@ -637,7 +637,7 @@ export const httpCatData = [
     title: "Connection timed out",
     imgUrl: "../images/523.jpeg",
     source: `https://http.dev/523`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>O código HTTP <i class='bg-grey'>523 Origin is unreachable</i> é um erro de servidor não oficial, específico do Cloudflare. Esse código de status HTTP ocorre quando há um erro no servidor de origem e ele não pode ser acessado.</p>`,
   },
@@ -646,7 +646,7 @@ export const httpCatData = [
     title: "SSL handshake failed",
     imgUrl: "../images/525.jpeg",
     source: `https://http.dev/525`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>
     O status HTTP <i class='bg-grey'>525 SSL handshake failed</i> é um erro não oficial específico da Cloudflare. Esse erro ocorre quando a conexão com o servidor original falha porque a negociação SSL não foi concluída com sucesso.
@@ -658,7 +658,7 @@ export const httpCatData = [
     title: "Site Frozen",
     imgUrl: "../images/530.jpeg",
     source: `https://http.dev/530`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>O status HTTP <i class='bg-grey'>530 Site Frozen</i> é um erro de servidor não oficial  e está relacionado ao Cloudflare e ao Pantheon. No Cloudflare, um segundo código de erro HTTP 1XXX será incluído para explicar melhor o problema. No Pantheon, o código <i class='bg-grey'>530 - Site Frozen</i> significa que o site foi restringido por inatividade.</p>`,
   },
@@ -667,7 +667,7 @@ export const httpCatData = [
     title: "Network Connect Timeout Error",
     imgUrl: "../images/599.jpeg",
     source: `https://http.dev/599`,
-    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma documentação.</p>
+    description: `<p class='nota-importante'><i class='bold'>Não oficial</i>: Esse código de status HTTP não é especificado por nenhuma RFC.</p>
     
     <p>O código HTTP <i class='bg-grey'>599 Network Connect Timeout Error</i> é um código não oficial usado por alguns proxies para indicar que a conexão com o servidor, feita pelo proxy, demorou demais para responder ao cliente que está na frente do proxy.</p>`,
   },
